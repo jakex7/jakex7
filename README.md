@@ -1,4 +1,4 @@
-## Hey 👋, I'm [jake7](https://github.com/jaketvvv)
+## Hey 👋, I'm [jake](https://github.com/jaketvvv)
 
 Proudly contributor of open-source like [@gatsbyjs](https://github.com/gatsbyjs), [@reactjs](https://github.com/reactjs) and main translator of [@vuejs-pl](https://github.com/vuejs-pl)
 
