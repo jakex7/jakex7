@@ -1,0 +1,195 @@
+<svg width="1102" height="536" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400..800");
+    @keyframes spin {
+      0% {
+        transform: translate(-10%, calc(-50% + 268px)) rotate(90deg);
+      }
+      100% {
+        transform: translate(-10%, calc(-50% + 268px)) rotate(450deg);
+      }
+    }
+    @keyframes opacity {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .gradientStyle {
+      width: 100%;
+      aspect-ratio: 1;
+      opacity: 0;
+      transform: translate(-10%, calc(-50% + 268px)) rotate(90deg);
+      background-image: conic-gradient(from 0deg at 50% 50%, #803EF6 0%, #F6C249 17%, #EB3C62 35%, #F6C249 48%, #AC3FD7 62%, #5FBFFA 78%, #5FBFFA 89%, #803EF6 100%);
+      animation: spin 4s linear infinite, opacity 2s ease-in forwards;
+    }
+
+    
+    @keyframes circleLeftAnimation {
+      0% { opacity: 0; }
+      15% { opacity: .8; }
+      50% {
+        margin-top: -20px;
+        height: 50px;
+        filter: blur(30px);
+      }
+      90% { opacity: 0.2; }
+      100% {
+        margin-top: -300px;
+        margin-left: -100px;
+        width: 800px;
+        height: 800px;
+        filter: blur(200px);
+        opacity: 0;
+      }
+    }
+    .circleLeftStyle {
+      background: #AC3FD7;
+      border-radius: 50%;
+      margin-top: -20px;
+      margin-left: 350px;
+      width: 50px;
+      height: 50px;
+      filter: blur(30px);
+      animation: circleLeftAnimation 2s forwards;
+    }
+    @keyframes circleRightAnimation {
+      0% { opacity: 0; }
+      15% { opacity: .8; }
+      50% {
+        margin-top: -20px; 
+        height: 50px;
+        filter: blur(30px);
+      }
+      90% { opacity: 0.2; } 
+      100% {
+        margin-top: -300px;
+        margin-left: 500px;
+        width: 800px;
+        height: 800px;
+        filter: blur(200px);
+        opacity: 0; 
+      } 
+    }
+    .circleRightStyle {
+      background: #5FBFFA;
+      border-radius: 50%;
+      margin-top: -20px;
+      margin-left: 450px;
+      width: 50px;
+      height: 50px;
+      filter: blur(30px);
+      animation: circleRightAnimation 2s forwards;
+    }
+    .center {
+      height: 100%;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .text {
+      font-weight: 400;
+      color: white;
+      font-family: "JetBrains Mono", monospace;
+      display: inline-block;
+      font-size: 86px;
+      width: 0;
+
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid transparent; /* The typwriter cursor */ 
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: 0em; /* Adjust as needed */
+      animation: 
+        2s typing 2s steps(12, end) forwards,
+        2s blink-caret .2s step-end infinite;
+    }
+    .text strong {
+      font-weight: 800;
+      background: -webkit-linear-gradient(45deg, #EB3C62, #F6C249);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: white; }
+    }
+  </style>
+  <image id="frame" href="https://jakex7.github.io/jakex7/assets/device-frame.png"/>
+  <defs>
+    <filter id="blur1">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="blur3">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <rect id="border" x="19.5" y="23.5" width="1063" height="489" rx="75" stroke="white" fill="none"/>
+    <clipPath id="maskClip">
+      <use href="#border" stroke="none" fill="white"/>
+    </clipPath>
+    <mask id="mask1" mask-type="alpha">
+      <use href="#border" stroke-width="2" filter="url(#blur1)"/>
+    </mask>
+    <mask id="mask2" mask-type="alpha">
+      <use href="#border" stroke-width="2" filter="url(#blur2)"/>
+    </mask>
+    <mask id="mask3" mask-type="alpha">
+      <use href="#border" stroke-width="2" filter="url(#blur3)"/>
+    </mask>
+    <mask id="maskHard" mask-type="alpha">
+      <use href="#border" stroke-width="2"/>
+    </mask>
+  </defs>
+  <g id="gradients-original">
+    <foreignObject id="gradient3" x="0" y="0" width="120%" height="120%" mask="url(#mask3)" clip-path="url(#maskClip)">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="gradientStyle"></div>
+    </foreignObject>
+    <foreignObject id="gradient2" x="0" y="0" width="120%" height="120%" mask="url(#mask2)" clip-path="url(#maskClip)">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="gradientStyle"></div>
+    </foreignObject>
+    <foreignObject id="gradient1" x="0" y="0" width="120%" height="120%" mask="url(#mask1)" clip-path="url(#maskClip)">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="gradientStyle"></div>
+    </foreignObject>
+  </g>
+  <g id="gradients-copy">
+    <foreignObject id="gradient3" x="0" y="0" width="120%" height="120%" mask="url(#mask3)" clip-path="url(#maskClip)">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="gradientStyle"></div>
+    </foreignObject>
+    <foreignObject id="gradient2" x="0" y="0" width="120%" height="120%" mask="url(#mask2)" clip-path="url(#maskClip)">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="gradientStyle"></div>
+    </foreignObject>
+    <foreignObject id="gradient1" x="0" y="0" width="120%" height="120%" mask="url(#mask1)" clip-path="url(#maskClip)">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="gradientStyle"></div>
+    </foreignObject>
+  </g>
+  <foreignObject id="gradientHard" x="0" y="0" width="120%" height="120%" mask="url(#maskHard)" clip-path="url(#maskClip)">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="gradientStyle"></div>
+  </foreignObject>
+  
+  <foreignObject id="circleLeft" x="0" y="0" width="100%" height="100%" clip-path="url(#maskClip)">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="circleLeftStyle"></div>
+  </foreignObject>
+  <foreignObject id="circleRight" x="0" y="0" width="100%" height="100%" clip-path="url(#maskClip)">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="circleRightStyle"></div>
+  </foreignObject>
+  
+  <foreignObject x="0" y="0" width="100%" height="100%">
+    <div class="center">
+      <div>
+        <h1 class="text">Hi! I'm <strong>jake</strong></h1>
+      </div>
+    </div>
+  </foreignObject>
+  
+  <circle cx="59" cy="242.5" r="4.5" fill="#FF9500" />
+</svg>
