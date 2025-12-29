@@ -3,7 +3,7 @@
 ## Emoji Composer
 
 <details>
-<summary>Primary</summary>
+<summary>Primary <img src="https://emoji.jakubgrzywacz.pl/get?left" alt="Primary emoji" width="16"></summary>
 <a href="https://emoji.jakubgrzywacz.pl/set?left=1fa84" title="1fa84">🪄</a>
 <a href="https://emoji.jakubgrzywacz.pl/set?left=1f600" title="1f600">😀</a>
 <a href="https://emoji.jakubgrzywacz.pl/set?left=1f603" title="1f603">😃</a>
@@ -627,7 +627,7 @@
 </details>
 
 <details>
-<summary>Secondary</summary>
+<summary>Secondary <img src="https://emoji.jakubgrzywacz.pl/get?right" alt="Secondary emoji" width="16"></summary>
 <a href="https://emoji.jakubgrzywacz.pl/set?right=1fa84" title="1fa84">🪄</a>
 <a href="https://emoji.jakubgrzywacz.pl/set?right=1f600" title="1f600">😀</a>
 <a href="https://emoji.jakubgrzywacz.pl/set?right=1f603" title="1f603">😃</a>
