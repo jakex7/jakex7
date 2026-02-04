@@ -1250,4 +1250,4 @@
 <a href="https://emoji.jakubgrzywacz.pl/set?right=1f4ac" title="1f4ac">💬</a>
 </details>
 
-<img src="https://emoji.jakubgrzywacz.pl/combined" alt="test" width="100">
+<img src="https://emoji.jakubgrzywacz.pl/combined" alt="Combined emoji" width="100">
