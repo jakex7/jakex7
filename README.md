@@ -1,6 +1,6 @@
 <!-- <img src="https://jakex7.github.io/jakex7/assets/animation.svg" alt="Hi! I'm jake"> -->
 
-## Emoji Composer
+### Emoji fun
 
 <details>
 <summary>Primary <img src="https://emoji.jakubgrzywacz.pl/get?left" alt="Primary emoji" width="16"></summary>
@@ -1250,4 +1250,9 @@
 <a href="https://emoji.jakubgrzywacz.pl/set?right=1f4ac" title="1f4ac">💬</a>
 </details>
 
-<img src="https://emoji.jakubgrzywacz.pl/combined" alt="Combined emoji" width="100">
+<img src="https://emoji.jakubgrzywacz.pl/combined" alt="Combined emoji" width="80">
+
+### Highlights
+
+* 📝 [Home screen widgets and Live Activities in Expo](https://expo.dev/blog/home-screen-widgets-and-live-activities-in-expo)
+* 🎥 [First Look at Expo Widgets: iOS Widgets Without Native Code](https://www.youtube.com/watch?v=tDdtHG3z1jQ)
